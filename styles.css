@@ -1,0 +1,1417 @@
+body {
+  background-color: #f8f8f8; /*<-- esto cambia el color total del fondo de la pagina*/
+  padding-top: 80px; /*<-- esto agrega espacio arriba de la pagina para que no se superponga con el header */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------- Bloque Header -----------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.logo-img {
+  /*<-- esto es el logo con un id para que sea un objeto unico */
+  width: auto; /*<-- esto hace que el ancho del logo sea automatico, se ajusta al alto */
+  height: 25px;
+  display: block; /*<-- esto hace que el logo sea un bloque y no un elemento en linea */
+}
+.main-header {
+  /*<-- esto es el header de la pagina es la barra superior, el contenedor del logo y los enlaces de navegación */
+  background-color: #1a3a2a; /*<-- esto cambia el color de fondo del header */
+  display: flex; /*<-- esto hace que los elementos dentro del header se alineen en una fila */
+  justify-content: space-between; /*<-- esto hace que los elementos dentro del header se distribuyan con espacio entre ellos 
+    (display y justify-content empujan el logo a la izquierda buscador a la derecha y menu en medio ) */
+  align-items: center; /*<-- centra todo verticalmente */
+  padding: 1px 30px; /*<-- esto agrega espacio dentro del header, 1px arriba y abajo, 30px a los lados, genera los espacios arriba y abajo  */
+  border-bottom: 1px solid #333; /*<-- dibuja una linea gris abajo de la barra para separar el resto del cuerpo de la pagina */
+  position: fixed; /*<-- esto hace que el header se quede fijo en la parte superior de la pagina al hacer scroll */
+  top: 0;
+  left: 0; /*<-- esto hace que el header se quede fijo en la parte superior de la pagina al hacer scroll */
+  width: 100%; /*<-- esto hace que el header ocupe todo el ancho de la pagina */
+  z-index: 1000; /*<-- esto hace que el header se quede fijo en la parte superior de la pagina al hacer scroll */
+  box-sizing: border-box; /*<-- esto hace que el padding y el borde se incluyan en el ancho y alto del header */
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.nav-links {
+  /*<-- esto es para los enlaces de navegación, el menu de la barra superior, es el contenedor especifico de los enlaces */
+  display: flex; /*<-- esto hace que los enlaces se alineen en una fila */
+  align-items: center; /*<-- centra los enlaces verticalmente */
+}
+.nav-links a {
+  /*<-- les da diseño a los enlaces de navegación, el menu de la barra superior */
+  color: #f5f5f5; /*<-- esto cambia el color del texto de los enlaces */
+  text-decoration: none; /*<-- esto quita el subrayado de los enlaces */
+  font-size: 20px; /*<-- esto cambia el tamaño de la fuente de los enlaces */
+  text-transform: uppercase; /*<-- esto cambia el texto de los enlaces a mayusculas */
+  padding: 0 20px; /*<-- esto agrega espacio a los lados de los enlaces, 0 arriba y abajo, 20px a los lados */
+  border-right: 1px solid #555; /*<-- esto dibuja una linea gris a la derecha de cada enlace, para separarlos visualmente */
+  transition: color 0.3s ease; /*<-- esto hace que el cambio de color al pasar el mouse sea suave */
+}
+.nav-links a:hover,
+.nav-links a:active {
+  /*<-- esto cambia el color de los enlaces al pasar el mouse o al hacer click */
+  color: #121212;
+}
+.search-box input {
+  /*<-- esto es para el cuadro de busqueda, el input de texto */
+  padding: 8px 12px; /*<-- esto agrega espacio dentro del cuadro de busqueda, 8px arriba y abajo, 12px a los lados */
+  border: none; /*<-- esto quita el borde del cuadro de busqueda */
+  outline: none; /*<-- esto quita el borde azul que aparece al hacer click en el cuadro de busqueda */
+  background-color: #ffffff; /*<-- esto cambia el color de fondo del cuadro de busqueda */
+  color: #000; /*<-- esto cambia el color del texto dentro del cuadro de busqueda */
+}
+.search-box {
+  display: flex; /*<-- esto hace que el cuadro de busqueda y el boton se alineen en una fila */
+  align-items: strech; /*<-- esto hace que el cuadro de busqueda y el boton tengan la misma altura */
+}
+
+.search-box button {
+  padding: 8px 12px; /*<-- esto agrega espacio dentro del boton de busqueda, 8px arriba y abajo, 12px a los lados */
+  background-color: #f5f5f5; /*<-- esto cambia el color de fondo del boton de busqueda */
+  color: #000; /*<-- esto cambia el color del texto dentro del boton de busqueda */
+  border: none; /*<-- esto quita el borde del boton de busqueda */
+  cursor: pointer; /*<-- esto cambia el cursor al pasar el mouse sobre el boton de busqueda */
+  font-size: 12px; /*<-- esto cambia el tamaño de la fuente del texto dentro del boton de busqueda */
+  display: flex; /*<-- esto hace que el boton de busqueda sea un contenedor flexible */
+  align-items: center; /*<-- esto centra el contenido del boton de busqueda verticalmente */
+  justify-content: center; /*<-- esto centra el contenido del boton de busqueda horizontalmente */
+}
+.search-box button:hover {
+  /*<-- esto cambia el color del boton de busqueda al pasar el mouse */
+  background-color: #121212; /*<-- esto cambia el color de fondo del boton de busqueda al pasar el mouse */
+}
+/*===========================================================================================================================================================================================
+============================================================== Bloque Portada Hero ====================================================================================================================================================================================
+==============================================================================================================================================================================*/
+.portada-hero {
+  margin-top: 0;
+  width: 100%;
+  height: 600px;
+  background-image: url("imagenes/portada.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: 141414;
+  display: block;
+}
+/*===========================================================================================================================================================================================
+============================================================== Bloque Productos Destacados ====================================================================================================================================================================================
+==============================================================================================================================================================================*/
+/* Centra el título principal */
+.productos-destacados h1 {
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* El contenedor que alinea las 4 tarjetas en una sola fila */
+.contenedor-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre tarjetas */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* La tarjeta de cada producto (Controla el tamaño de la miniatura) */
+.tarjeta-producto {
+  flex: 1;
+  max-width: 450px; /* Limita el ancho para que no se hagan gigantes */
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+/* Efecto hover elegante */
+.tarjeta-producto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Obligamos a la imagen a ser pequeña y centrarse */
+.tarjeta-producto img {
+  width: 100%;
+  max-width: 500px; /* Ajusta este número si las quieres un poco más grandes o chicas */
+  height: auto;
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+/* Textos de la tarjeta */
+.tarjeta-producto h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #222;
+  margin: 10px 0 5px 0;
+  font-family: sans-serif;
+}
+
+.tarjeta-producto p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 15px;
+  height: 36px; /* Altura fija para que los textos largos no desalinien los botones */
+  overflow: hidden;
+}
+
+/* Estilo para tus botones de "Ver productos..." */
+.boton-details,
+.boton-detalle {
+  display: inline-block;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+  font-weight: bold;
+}
+
+.boton-detalle:hover {
+  color: #555;
+  border-color: #555;
+}
+/*===========================================================================================================================================================================================
+=================================================================== Bloque Propuesta de Valor ================================================================================================================================================================================
+==============================================================================================================================================================================*/
+
+.propuesta-valor {
+  background-color: #fcfcfc;
+  padding: 60px 20px;
+  border-top: 1px solid #eee;
+}
+
+.contenedor-valores {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.valor-item {
+  flex: 1;
+  text-align: center;
+  max-width: 300px;
+}
+
+.valor-item h3 {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.valor-item p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+/*===========================================================================================================================================================================================
+=================================================================== Bloque Historia ================================================================================================================================================================================
+==============================================================================================================================================================================*/
+
+.seccion-historia-premium {
+  position: relative;
+  padding: 120px 20px;
+  color: #ffffff;
+
+  /* CONTROL DEL BACKGROUND */
+  background-image: url("imagenes/fondo1.png");
+  background-size: cover; /* Fuerza a la imagen a cubrir todo el ancho y alto sin deformarse */
+  background-position: center; /* Centra la textura para que luzca simétrica */
+  background-repeat: no-repeat; /* Evita que la imagen se duplique en pantallas grandes */
+  background-attachment: scroll; /* Cambia a 'fixed' si quieres un efecto parallax elegante */
+}
+
+/* Capa sutil de contraste (Opcional) 
+   Si el texto se llega a perder un poco con las vetas blancas, esta capa negra translúcida lo soluciona */
+.seccion-historia-premium::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Capa oscura al 40% */
+  z-index: 1;
+}
+
+/* Contenedor que divide la pantalla en 2 bloques limpios */
+.bloqueo-interno-historia {
+  position: relative;
+  z-index: 2; /* Posiciona el contenido por encima de la capa oscura */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+/* COLUMNA 1: El texto (Toma el 50% del espacio) */
+.columna-texto-historia {
+  flex: 1;
+  max-width: 540px;
+  background-color: rgba(
+    11,
+    21,
+    17,
+    0.85
+  ); /* Fondo verde oscuro traslúcido para aislar el texto y darle un look brutal */
+  padding: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.tagline-marca {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #a4beac; /* Verde grisáceo claro para conectar con la paleta fría */
+  display: block;
+  margin-bottom: 12px;
+}
+
+.columna-texto-historia h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 15px 0;
+}
+
+.separador-dorado {
+  width: 50px;
+  height: 2px;
+  background-color: #c5a880; /* Manteniendo el toque de la marca */
+  margin-bottom: 25px;
+}
+
+.columna-texto-historia p {
+  font-size: 20px;
+  color: #e0e0e0;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.texto-destaque {
+  font-style: italic;
+  color: #ffffff !important;
+  border-left: 2px solid #c5a880;
+  padding-left: 15px;
+}
+
+/* COLUMNA 2: Espacio visual (Toma el otro 50%) */
+.columna-vacia-historia {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor para alinear el logo y la firma */
+.contenedor-logo-firma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px; /* Espacio de separación entre el logo y la firma */
+  width: 100%;
+  max-width: 400px; /* Evita que las imágenes se estiren de más */
+  animation: flotarSuave 4s ease-in-out infinite; /* Toque pro: una animación sutil */
+}
+
+/* Control del Logotipo */
+.logo-historia {
+  width: 80%; /* Toma la mayor parte del contenedor */
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(
+    0 10px 20px rgba(0, 0, 0, 0.6)
+  ); /* Le da profundidad sobre el mármol */
+  margin-top: -50px;
+}
+
+/* Control de la Firma */
+.firma-historia {
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.9; /* Se funde un poco mejor con el entorno oscuro */
+  margin-top: -70px;
+}
+
+/* Animación sutil para que el bloque tenga vida (opcional, pero se ve increíble) */
+@keyframes flotarSuave {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Sección de la Historia */
+.historia-seccion {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contenedor-history,
+.contenedor-historia {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.texto-historia {
+  flex: 1;
+}
+
+.texto-historia h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.texto-historia p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.imagen-historia {
+  flex: 1;
+}
+
+.imagen-historia img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/*===========================================================================================================================================================================================
+================================================================ Bloque Explora Kits ==================================================================================================================================================================================
+==============================================================================================================================================================================*/
+
+.teaser-kits {
+  background-color: #141a18; /* Gris oscuro con un ligero toque verdoso mate */
+  padding: 100px 20px;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contenedor-teaser-kits {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Columna de la Imagen */
+.imagen-teaser-kits {
+  flex: 1;
+  max-width: 500px;
+}
+
+.imagen-teaser-kits img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Columna de los Textos */
+.texto-teaser-kits {
+  flex: 1;
+  max-width: 500px;
+}
+
+.etiqueta-exclusivo {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #c5a880; /* Dorado elegante de EmDa */
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.texto-teaser-kits h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 15px 0;
+  line-height: 1.3;
+}
+
+.linea-decorativa {
+  width: 50px;
+  height: 2px;
+  background-color: #c5a880;
+  margin-bottom: 25px;
+}
+
+.texto-teaser-kits p {
+  font-size: 20px;
+  color: #cccccc;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.ahorro-destacado {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 35px !important;
+}
+
+/* Botón Premium para ir a la página de Kits */
+.boton-ver-kits {
+  display: inline-block;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 15px 35px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.boton-ver-kits:hover {
+  background-color: #ffffff;
+  color: #141a18; /* Invierte colores al pasar el mouse */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo básico para celulares */
+@media (max-width: 768px) {
+  /* 1. ARREGLAR EL HEADER (El menú verde) */
+
+  .header,
+  nav {
+    height: auto !important;
+    padding: 15px 10px !important;
+  }
+
+  .header ul,
+  nav ul {
+    display: flex !important;
+    flex-direction: column !important; /* Los pone uno abajo de otro en vertical */
+    align-items: center !important;
+    gap: 10px !important;
+    padding: 0 !important;
+    margin: 10px 0 0 0 !important;
+  }
+
+  .header ul li,
+  nav ul li {
+    width: 100% !important;
+    text-align: center !important;
+    border-right: none !important; /* Quita las líneas divisoras verticales */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important; /* Línea horizontal sutil */
+    padding-bottom: 8px !important;
+  }
+
+  /* 2. ARREGLAR LOS PRODUCTOS ESTRELLA (Para que no se vean minúsculos) */
+  .contenedor-grid {
+    flex-direction: column !important; /* Pasa de fila a una columna vertical */
+    align-items: center !important;
+    gap: 30px !important;
+  }
+
+  .tarjeta-producto {
+    width: 90% !important; /* Toma casi todo el ancho del celular */
+    max-width: 300px !important;
+    margin: 0 auto !important;
+  }
+
+  /* 3. ARREGLAR LA PROPUESTA DE VALOR Y LA HISTORIA */
+  .contenedor-valores,
+  .contenedor-historia {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 30px !important;
+  }
+
+  .imagen-historia img {
+    max-width: 100% !important;
+  }
+
+  /* 4. ARREGLAR EL FOOTER (El amontonadero de abajo) */
+  /* Contenedor principal de Contacto y Redes */
+  footer div,
+  .contenedor-footer {
+    flex-direction: column !important;
+    gap: 25px !important;
+    text-align: center !important;
+  }
+
+  /* La franja negra del copyright y los enlaces legales */
+  footer .creditos,
+  footer p,
+  .barra-privacidad {
+    display: flex !important;
+    flex-direction: column !important; /* Los textos legales bajan en fila */
+    gap: 8px !important;
+    text-align: center !important;
+    padding: 15px 0 !important;
+  }
+
+  /* Si los enlaces de privacidad estaban en una sola línea horizontal */
+  .barra-privacidad a,
+  footer ul {
+    display: block !important;
+    margin: 5px 0 !important;
+  }
+  /*===========================================================================================================================================================================================
+======================================================================= Bloque FAQ =========================================================================================================================================================================
+==============================================================================================================================================================================*/
+
+  .seccion-faq-blanca {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 80px 20px;
+    color: #000000;
+  }
+}
+
+/*===========================================================================================================================================================================================
+===================================================================== Sección FAQ =========================================================================================================================================================================
+==============================================================================================================================================================================*/
+
+.titulo-faq {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #000;
+}
+.subtitulo-faq {
+  color: #1a3a2a;
+  margin-bottom: 50px;
+  font-style: italic;
+  font-size: 30px;
+}
+.item-faq-blanco {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.pregunta-blanca {
+  list-style: none; /* Quita el icono default */
+  padding: 25px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Aquí controlas la separación exacta entre texto y flecha */
+  font-weight: 600;
+  font-size: 22px;
+}
+.flecha {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+/* Efecto de subrayado al pasar el ratón */
+.pregunta-blanca:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
+/* Rotación de la flecha */
+.flecha {
+  transition: transform 0.4s ease;
+  font-weight: bold;
+}
+
+.item-faq-blanco.active .flecha {
+  transform: rotate(90deg); /* Gira hacia abajo al hacer clic */
+}
+
+.respuesta-blanca {
+  padding-bottom: 20px;
+  color: #444;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.item-faq-blanco.active .respuesta-blanca {
+  max-height: 100px;
+  padding-bottom: 20px;
+}
+/* Ocultamos el marcador por defecto que pone el navegador */
+summary {
+  list-style: none; /* Esto quita el triangulito feo que trae por defecto */
+}
+summary::-webkit-details-marker {
+  display: none; /* Esto quita el triangulito en Chrome/Safari */
+}
+
+/* La animación de giro de la flecha */
+details[open] .flecha {
+  transform: rotate(90deg);
+}
+
+/* Animación opcional para que se despliegue suave (fade in) */
+details[open] .respuesta-blanca {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*===========================================================================================================================================================================================
+============================================================= Bloque Promos =====================================================================================================================================================================================
+==============================================================================================================================================================================*/
+
+.emda-promo-paquetes {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  font-family: sans-serif; /* Cambia por tu tipografía global */
+  color: #333333;
+}
+.titulos-productos{ 
+  grid-column: 1 / -1; /* Ocupa toda la fila del grid */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color:#000 !important;
+  font-family: oswald, sans-serif;
+}
+/* Distribución en dos columnas principales mediante Grid */
+.emda-paquete-diseno {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media (min-width: 992px) {
+  .emda-paquete-diseno {
+    grid-template-columns: 3fr 1fr; /* Columna izquierda grande, derecha estrecha */
+  }
+}
+@media (min-width: 992px) {
+  .seccion-productos-diseno.seccion-ancho-completo {
+    grid-template-columns: 1fr !important; /* Elimina la división 3fr 1fr y deja una sola columna completa */
+    display: block !important; /* Por si acaso, rompe el comportamiento grid de ese contenedor */
+    width: 100% !important;
+    max-width: 1200px !important; /* Ajusta al ancho de tu menú principal */
+    margin: 0 auto !important;
+  }
+}
+
+/* Grid de Productos (Izquierda) */
+.emda-paquete-cuadricula {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+/* bloque cuadricula seccion productos*/
+.cuadricula-productos {
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  justify-content: space-between; /* Alinea y distribuye el espacio */
+  /* Forzamos a que el contenedor use todo el ancho disponible del diseño */
+  width: 100%;
+  max-width: 1200px; /* O el ancho máximo que use tu diseño general */
+  margin: 0 auto; /* Lo centra en la pantalla */
+  padding: 0 20px;
+
+  /*Reseteamos las columnas para que ocupen las 4 partes iguales, 
+       eliminando el espacio que estaba reservado para el carrito */
+  grid-template-columns: repeat(4, 1fr);
+
+  /* Si teniamos un área de grid nombrada (grid-template-areas), la desactivamos */
+  grid-template-areas: none;
+}
+.seccion-productos-completa {
+  width: 100% !important; /* El !important obliga a ignorar el espacio del carrito */
+  max-width: 100% !important;
+  display: block; /* Si era un grid que separaba el carrito, esto lo rompe y lo vuelve normal */
+}
+
+/* Y aseguras que el diseño interno también se estire */
+.seccion-productos-diseno .emda-paquete-diseno {
+  width: 100%;
+  max-width: 1200px; /* O el ancho máximo de tu página */
+  margin: 0 auto;
+}
+
+/* Tarjeta de Producto */
+.emda-tarjeta-producto {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #eaeaea;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.emda-tarjeta-producto {
+  /*Sombra actual */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  /* Agrega aquí la transición */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.emda-tarjeta-producto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 1);
+  border-color: #dcdcdc;
+}
+/* Ajustes específicos para la página de productos */
+.tarjeta-detalle {
+  background-color: white; /* O el color que quieras para la página de productos */
+  border: 1px solid #eee; /* Un borde fino para separar del fondo */
+  max-width: 100%; /* O quita el max-width si tenías uno fijo */
+  width: 100%;
+}
+
+.tarjeta-imagen-detalle img {
+  width: 100%; /* Asegura que la foto ocupe todo el ancho */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 8px; /* Suaviza las esquinas */
+}
+
+/* Contenedores de Imagen */
+.tarjeta-contenedor-img {
+  padding: 30px 20px 10px 20px;
+  text-align: center;
+  background: #fafafa; /* Fondo sutil para las botellas */
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjeta-contenedor-img img {
+  max-height: 200px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Variación: Tarjeta con diseño promocional de fondo (como el Shaving Gel) */
+.tarjeta-destacada .tarjeta-promo-bg {
+  position: relative;
+  background: #000000;
+  min-height: 250px;
+  overflow: hidden;
+}
+
+.tarjeta-destacada .tarjeta-promo-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.titulo-promo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #ffffff;
+}
+
+.titulo-promo h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Detalles del texto de la tarjeta */
+.tarjeta-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.subtexto {
+  font-size: 11px;
+  color: #999999;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tarjeta-info h4 {
+  font-size: 15px;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #222222;
+}
+
+.tarjeta-precio {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #111111;
+}
+
+/* Precios cruzados por descuento */
+.descuento-precio {
+  color: #d9534f;
+  margin-right: 8px;
+}
+.precio-original {
+  text-decoration: line-through;
+  color: #aaaaaa;
+  font-size: 13px;
+}
+
+/* Botones de las Tarjetas */
+.btn-anadir-al-carrito {
+  width: 100%;
+  background-color: #384252; /* Tono gris oscuro azulado de tu referencia */
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  border-radius: 25px; /* Bordes muy redondeados ovalados */
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-anadir-al-carrito:hover {
+  background-color: #1f2733;
+}
+
+/* Panel Lateral Flotante (Derecha) */
+.emda-barra-lateral {
+  width: 100%;
+}
+
+.cuadro-compras {
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 20px;
+  padding: 30px 24px;
+  position: static;
+}
+
+@media (min-width: 992px) {
+  .cuadro-compras {
+    position: sticky;
+    top: 40px; /* Se queda fijo al hacer scroll hacia abajo */
+  }
+}
+
+.cuadro-compras h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  letter-spacing: -0.5px;
+  color: #222222;
+}
+
+.barra-instruccion {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.division-barra {
+  height: 1px;
+  background-color: #eaeaea;
+  margin-bottom: 20px;
+}
+
+.barra-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.valor-total {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.valor-costo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #111111;
+}
+
+.btn-anadir-compra {
+  width: 100%;
+  background-color: #cbd5e1; /* Gris claro desactivado por defecto */
+  color: #ffffff;
+  border: none;
+  padding: 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: not-allowed;
+}
+/*===========================================================================================================================================================================================
+================================================================= Bloque Proveedores ==================================================================================================================================================================================
+==============================================================================================================================================================================*/
+
+.emda-proveedores-seccion {
+  background-color: #f9f9f9; /* Fondo limpio y claro */
+  padding: 80px 20px;
+  color: #111111;
+  text-align: center;
+}
+
+.emda-proveedores-contenedor {
+  max-width: 550px; /* Centrado y angosto para que el formulario no se deforme */
+  margin: 0 auto;
+}
+
+.emda-proveedores-seccion h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+  letter-spacing: 1px;
+}
+
+.emda-proveedores-seccion p {
+  font-size: 18px;
+  color: #555555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* El span class para resaltar el 15% en dorado */
+.emda-texto-resaltado {
+  color: #c5a880;
+  font-weight: bold;
+}
+
+/* Cajas de texto (Inputs) */
+.emda-grupo-input {
+  margin-bottom: 20px;
+}
+
+.emda-formulario-registro input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 8px; /* Bordes ligeramente suaves, no tan circulares como los botones */
+  font-size: 15px;
+  background-color: #ffffff;
+  box-sizing: border-box; /* Evita que el input se salga de la pantalla en celulares */
+  transition: border-color 0.3s ease;
+}
+
+/* Efecto cuando el usuario da clic para escribir en el input */
+.emda-formulario-registro input:focus {
+  border-color: #c5a880; /* El borde se vuelve dorado */
+  outline: none;
+}
+
+/* Botón de Envío */
+.emda-boton-enviar {
+  width: 100%;
+  background-color: #111111; /* Negro puro para contrastar con el fondo claro */
+  color: #ffffff;
+  border: none;
+  padding: 16px;
+  border-radius: 25px; /* Ovalado, haciendo juego con tus botones de paquetes */
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.emda-boton-enviar:hover {
+  background-color: #1a3a2a; /* Cambia a dorado al pasar el mouse */
+}
+
+.parent {
+  width: 80%;
+  margin: auto;
+}
+.product {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.product img {
+  display: block;
+  margin: auto;
+  width: 230px;
+  height: 290px;
+}
+/*===========================================================================================================================================================================================
+==================================================================== Bloque Politica de Privacidad ==============================================================================================================================================================================
+==============================================================================================================================================================================*/
+
+body.politica-privacidad {
+  background-color: #f4f6f9;
+}
+section.contenedor-politica-privacidad {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 08);
+  border: 1px solid #e0e0e0;
+  width: 85%;
+  margin: 40px auto;
+}
+article.politica-envio h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+article.politica.envio h2 {
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+article.politica-envio p {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.lista-politica-privacidad{
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding-left: 25px;
+}
+.lista-politica-privacidad li{
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.ultima-actualizacion {
+  font-size: 18;
+  color: #555454;
+}
+
+.correo-politica-privacidad a:hover {
+  text-decoration: underline;
+  color: #1a3a2a;
+}
+/*===========================================================================================================================================================================================
+======================================================================= Bloque Politica de Rembolso ===========================================================================================================================================================================
+==============================================================================================================================================================================*/
+
+body.politica-rembolso {
+  background-color: #f4f6f9;
+}
+section.contenedor-politica-rembolso {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 08);
+  border: 1px solid #e0e0e0;
+  width: 85%;
+  margin: 40px auto;
+}
+article.politica-rembolso h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+article.politica-rembolso h2 {
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+article.politica-rembolso p {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+.lista-politica-rembolso{
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding-left: 25px;
+}
+.lista-politica-rembolso li{
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.correo-rembolso a:hover {
+  text-decoration: underline;
+  color: #1a3a2a;
+}
+/*===========================================================================================================================================================================================
+================================================================= Bloque Terminos de Servicio ===========================================================================================================================================================================
+==============================================================================================================================================================================*/
+
+body.terminos-servicio {
+  background-color: #f4f6f9;
+}
+section.contenedor-terminos-servicio {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 08);
+  border: 1px solid #e0e0e0;
+  width: 85%;
+  margin: 40px auto;
+}
+article.terminos-servicio h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+article.terminos-servicio h2 {
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+article.terminos-servicio p {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+.lista-terminos-servicio{
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding-left: 25px;
+}
+.lista-terminos-servicio li{
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.correo-terminos-servicio a:hover {
+  text-decoration: underline;
+  color: #1a3a2a;
+}
+/*===========================================================================================================================================================================================
+=================================================================== Bloque Politicas de Envio ===========================================================================================================================================================================
+==============================================================================================================================================================================*/
+
+
+body.politica-rembolso {
+  background-color: #f4f6f9;
+}
+section.contenedor-politica-rembolso {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 08);
+  border: 1px solid #e0e0e0;
+  width: 85%;
+  margin: 40px auto;
+}
+article.politica-rembolso h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+article.politica-rembolso h2 {
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+article.politica-rembolso p {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+.lista-politica-envio{
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding-left: 25px;
+}
+.lista-politica-envio li{
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/*===========================================================================================================================================================================================
+=================================================================== Bloque Footer ===============================================================================================================================================================================
+==============================================================================================================================================================================*/
+footer {
+  /*<-- esto es el footer de la pagina, el contenedor del texto de copyright */
+  background-color: #ffffff; /*<-- esto cambia el color de fondo del footer */
+  color: #000000; /*<-- esto cambia el color del texto dentro del footer */
+  display: flex; /*<-- esto hace que los elementos dentro del footer se alineen en una fila */
+  flex-wrap: wrap; /*<-- esto hace que los elementos dentro del footer se alineen en una fila y se ajusten al tamaño de la pantalla */
+  justify-content: space-around;
+  align-items: flex-start; /*<-- esto hace que los elementos dentro del footer se alineen al inicio del contenedor */
+  padding: 12px 80px; /*<-- esto agrega espacio dentro del footer, 40px arriba y abajo, 60px a los lados */
+  text-align: center; /*<-- esto centra el texto dentro del footer */
+  box-sizing: border-box;
+  width: 100%; /*<-- esto hace que el footer ocupe todo el ancho de la pagina */
+  margin-bottom: 0 !important;
+}
+.seccion-faq-footer h3 {
+  color: #000000;
+  font-size: 16px;
+  text-transform: uppercase; /* Fuerza a que todo salga en mayúsculas */
+  letter-spacing: 2px; /* Separa un poquito las letras para un toque más elegante */
+  border-bottom: 2px solid #000000; /* La línea blanca que va abajo del título */
+  padding-bottom: 10px; /* Despega la línea del texto */
+  margin-bottom: 10px; /* Despega el título de los datos de abajo */
+  margin: left 50px;
+  margin-top: 0;
+}
+.seccion-faq-footer p {
+  margin: 8px 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+.seccion-faq-footer a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+.seccion-faq-footer a:hover,
+.seccion-faq-footer a:active {
+  color: #1a3a2a;
+  text-decoration: underline;
+}
+.contacto-footer h3 {
+  color: #000000;
+  font-size: 16px;
+  text-transform: uppercase; /* Fuerza a que todo salga en mayúsculas */
+  letter-spacing: 2px; /* Separa un poquito las letras para un toque más elegante */
+  border-bottom: 2px solid #000000; /* La línea blanca que va abajo del título */
+  padding-bottom: 10px; /* Despega la línea del texto */
+  margin-bottom: 10px; /* Despega el título de los datos de abajo */
+  margin: left 50px;
+  margin-top: 0;
+}
+.contacto-footer p {
+  /*<-- esto es el contenedor del texto de contacto dentro del footer */
+  margin: 8px 0; /*<-- esto agrega espacio arriba y abajo del texto de contacto dentro del footer */
+  font-family: sans-serif; /*<-- esto cambia la fuente del texto de contacto dentro del footer */
+  font-size: 16px; /*<-- esto cambia el tamaño de la fuente del texto de contacto dentro del footer */
+  color: #000000; /*<-- esto cambia el color del texto de contacto dentro del footer */
+}
+.contacto-footer a {
+  text-decoration: none; /*<-- esto quita el subrayado del texto de contacto dentro del footer */
+  color: #000000; /*<-- esto cambia el color del texto de contacto dentro del footer */
+  font-weight: bold; /*<-- esto cambia el grosor del texto de contacto dentro del footer */
+}
+.contacto-footer a:hover,
+.contacto-footer a:active {
+  /*<-- esto cambia el color de los enlaces al pasar el mouse o al hacer click */
+  color: #1a3a2a;
+  text-decoration: underline; /*<-- esto subraya el texto de contacto dentro del footer al pasar el mouse */
+}
+.redes-footer h3 {
+  color: #000000;
+  font-size: 16px;
+  text-transform: uppercase; /* Fuerza a que todo salga en mayúsculas */
+  letter-spacing: 2px; /* Separa un poquito las letras para un toque más elegante */
+  border-bottom: 2px solid #000000; /* La línea blanca que va abajo del título */
+  padding-bottom: 10px; /* Despega la línea del texto */
+  margin-bottom: 10px; /* Despega el título de los datos de abajo */
+  margin-top: 0%;
+}
+.iconos-footer {
+  display: flex; /*<-- esto hace que los iconos de redes sociales se alineen en una fila */
+  gap: 15px; /*<-- esto agrega espacio entre los iconos de redes sociales */
+  padding-left: 50px; /*<-- esto agrega espacio a la izquierda de los iconos de redes sociales */
+  padding-right: 50px; /*<-- esto agrega espacio a la derecha de los iconos de redes sociales */
+}
+.iconos-footer img {
+  transition: transform 0.2s ease; /*<-- esto hace que el cambio de tamaño al pasar el mouse sea suave */
+}
+.iconos-footer img:hover {
+  transform: scale(
+    1.5
+  ); /*<-- esto hace que los iconos de redes sociales aumenten de tamaño al pasar el mouse */
+}
+.nav-linkfooter a {
+  color: #000000; /*<-- esto cambia el color del texto de los enlaces */
+  text-decoration: none; /*<-- esto quita el subrayado de los enlaces */
+  font-size: 15px; /*<-- esto cambia el tamaño de la fuente de los enlaces */
+  padding: 0 20px; /*<-- esto agrega espacio a los lados de los enlaces, 0 arriba y abajo, 20px a los lados */
+  border-right: 1px solid #555; /*<-- esto dibuja una linea gris a la derecha de cada enlace, para separarlos visualmente */
+  transition: color 0.3s ease; /*<-- esto hace que el cambio de color al pasar el mouse sea suave */
+}
+.nav-linkfooter a:hover,
+.nav-linkfooter a:active {
+  /*<-- esto cambia el color de los enlaces al pasar el mouse o al hacer click */
+  color: #1a3a2a;
+}
+/*===========================================================================================================================================================================================
+==================================================================== Bloque Footer Bottom ==============================================================================================================================================================================
+==============================================================================================================================================================================*/
+
+.footer-bottom {
+  flex-basis: 100%; /* Obliga a esta caja a bajarse y ocupar todo el ancho disponible */
+  background-color: #1a1a1a; /* Un gris oscuro/negro minimalista para el contraste */
+  color: #ffffff; /* Letras blancas para que resalten */
+  display: flex;
+  justify-content: space-between; /* Copyright a la izquierda, políticas a la derecha */
+  align-items: center;
+  padding: 10px 40px; /* Espacio interno de la barrita */
+  margin-top: 20px; /* La separa de la sección blanca de arriba */
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0 !important;
+}
+
+/* Estilos para el texto del copyright */
+.footer-bottom p {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Estilos para los enlaces legales dentro del mini footer */
+.nav-linkfooter a {
+  color: #ffffff; /* Enlaces blancos */
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 15px; /* Separa un enlace del otro */
+}
+
+.nav-linkfooter a:hover {
+  text-decoration: underline; /* Se subraya sutilmente al pasar el mouse */
+}
