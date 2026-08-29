@@ -1104,6 +1104,14 @@ padding-bottom: 10px;
   text-align: center;
   color:  #c5a880;
 }
+.subcontenedor-nosotros h2:nth-of-type(2) {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  color: #ffffff;
+}
 .subcontenedor-nosotros p{
   font-size: 20px;
   text-align:center;
@@ -1112,6 +1120,62 @@ padding-bottom: 10px;
 }
 .subcontenedor-nosotros h1,p{
   color: #ffffff;
+}
+.contenedor-tarjetas-nosotros{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;  
+  padding-top: 30px;
+}
+.tarjeta-problema{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f0f2f5;
+}
+.tarjeta-problema h3{
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  text-align: center;
+}
+.tarjeta-problema p{
+  color: #1a3a2a;
+  font-size: 22px;
+}
+
+.tarjeta-solucion{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f0f2f5;
+}
+.tarjeta-solucion h3{
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  text-align: center;
+}
+.tarjeta-solucion p{
+color:#1a3a2a; 
+font-size: 22px;
+}
+.tarjeta-problema:hover, .tarjeta-solucion:hover{
+  transform: scale(.98);
+  transition: transform 0.2s ease-in-out;
 }
 
 /*===========================================================================================================================================================================================
