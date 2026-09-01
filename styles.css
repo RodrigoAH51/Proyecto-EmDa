@@ -1091,18 +1091,20 @@ details[open] .respuesta-blanca {
   padding: 80px 20px;
 }
 .subcontenedor-nosotros h1{
-font-size: 40px;
+font-size: 45px;
 margin-bottom: 10px;
 text-align: center;
 text-transform: uppercase;
-padding-bottom: 10px;
+padding-bottom: 15px;
+letter-spacing: 10px;
 }
 .subcontenedor-nosotros h2{
   font-style: italic;
-  font-size: 28px;
+  font-size: 30px;
   margin-bottom: 20px;
   text-align: center;
   color:  #c5a880;
+  padding-bottom: 10px;
 }
 .subcontenedor-nosotros h2:nth-of-type(2) {
   font-size: 40px;
@@ -1113,7 +1115,7 @@ padding-bottom: 10px;
   color: #ffffff;
 }
 .subcontenedor-nosotros p{
-  font-size: 20px;
+  font-size: 26px;
   text-align:center;
   line-height: 1.6;
   padding-bottom: 20px;
@@ -1140,15 +1142,16 @@ padding-bottom: 10px;
   background-color: #f0f2f5;
 }
 .tarjeta-problema h3{
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 20px;
   color: #1a1a1a;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 10px;
 }
 .tarjeta-problema p{
   color: #1a3a2a;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .tarjeta-solucion{
@@ -1163,21 +1166,250 @@ padding-bottom: 10px;
   background-color: #f0f2f5;
 }
 .tarjeta-solucion h3{
-  font-size: 32px;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 10px;
+}
+.tarjeta-solucion p{
+color:#1a3a2a; 
+font-size: 26px;
+}
+.tarjeta-problema:hover, .tarjeta-solucion:hover {
+  transform: scale(.98);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0 20px #f0f2f5;
+}
+/*===========================================================================================================================================================================================
+==================================================================== Bloque Pilares ===========================================================================================================================================================================
+==============================================================================================================================================================================*/
+.contenedor-nosotros-pilares{
+background-color: #1a3a2a;
+}
+.contenedor-nosotros-pilares h2{
+  font-style: italic;
+  text-transform: uppercase;
+  color:#ffffff;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 30px;
+  padding-bottom: 15px;
+}
+.contenedor-nosotros-pilares h3{
+  font-size: 35px;
+  color: #c5a880;
+  text-align: center;
+  padding-bottom: 5.5%;
+}
+.contenedor-tarjetas-pilares{
+display: flex;
+flex-direction: column;
+
+background-color: #f0f2f5;
+position: relative;
+}
+.contenido-tarjeta1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  gap: 50px;
+}
+.numero-pilar1{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1px;
+  font-size: 300px;
+  font-weight: bold;
+  z-index: 1;
+  opacity: 0.65;
+}
+.imagen-pilares1{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 150px;
+}
+.contenido-tarjeta1 h2{
+  font-size: 40px;
   margin-bottom: 20px;
   color: #1a1a1a;
   text-transform: uppercase;
   text-align: center;
 }
-.tarjeta-solucion p{
-color:#1a3a2a; 
-font-size: 22px;
+.contenido-tarjeta1 p{
+  color: #000;
+  font-size: 28px;
+  text-align: justify;
+  
 }
-.tarjeta-problema:hover, .tarjeta-solucion:hover{
-  transform: scale(.98);
-  transition: transform 0.2s ease-in-out;
+.contenido-tarjeta1-texto{
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
 }
 
+.contenido-tarjeta2{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  gap: 50px;
+}
+.numero-pilar2{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1px;
+  font-size: 300px;
+  font-weight: bold;
+  z-index: 1;
+  opacity: 0.65;
+}
+.imagen-pilares2{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 150px;
+}
+.contenido-tarjeta2 h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  text-align: center;
+}
+.contenido-tarjeta2 p{
+  color: #000;
+  font-size: 28px;
+  text-align: justify;
+  
+}
+.contenido-tarjeta2-texto{
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+}
+.contenido-tarjeta3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  gap: 50px;
+}
+.numero-pilar3{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1px;
+  font-size: 300px;
+  font-weight: bold;
+  z-index: 1;
+  opacity: 0.65;
+}
+.imagen-pilares3{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 150px;
+}
+.contenido-tarjeta3 h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  text-align: center;
+}
+.contenido-tarjeta3 p{
+  color: #000;
+  font-size: 28px;
+  text-align: justify;
+  
+}
+.contenido-tarjeta3-texto{
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+}
+.contenedor-sobre-nosotros{
+  background-color: #1a3a2a;
+}
+.texto-sobre-nosotros{
+text-align: center;
+}
+.texto-sobre-nosotros h2{
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 40px;
+  letter-spacing: 20px;
+  color: #ffffff;
+  padding: 30px 0 20px;
+
+}
+.texto-sobre-nosotros h3{
+  font-size: 34px;
+ color: #c5a880;
+ letter-spacing: 10px;
+ padding-bottom: 20px;
+}
+.texto-sobre-nosotros p{
+font-size: 30px;
+font-style: italic;
+padding-bottom: 20px;
+}
+.texto-sobre-nosotros2 p:nth-of-type(1){
+font-size: 50px;
+color: #c5a880;
+text-align: center;
+letter-spacing: 10px;
+padding-bottom: 10px;
+}
+.texto-sobre-nosotros2 p:nth-of-type(2){
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+  letter-spacing: 5px;
+  padding-bottom:20px ;
+}
+.img-anaquel-emda{
+  width: 95%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+.contenedor-botones-nosotros{
+display: flex;
+justify-content: center;
+gap: 20px;
+padding-bottom: 30px;
+}
+.btn-nosotros{
+width: 30%;
+height: 40px;
+border-radius: 10px;
+font-size: 20px;
+transition: 0.3s ease;
+border: none;
+cursor:pointer;
+}
+.btn-nosotros:active{
+ transform: scale(0.90);
+}
+.btn-nosotros:hover{
+  color: #1a3a2a;
+  background-color: #c5a880;
+}
 /*===========================================================================================================================================================================================
 ==================================================================== Bloque Politica de Privacidad ==============================================================================================================================================================================
 ==============================================================================================================================================================================*/
