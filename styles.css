@@ -1084,6 +1084,61 @@ details[open] .respuesta-blanca {
   height: 290px;
 }
 /*===========================================================================================================================================================================================
+==================================================================== Bloque Descubre tu rutina ========================================================================================================
+==============================================================================================================================================================================*/
+/* Contenedor Grid para las 4 tarjetas */
+ .rutina-perfiles{
+  background: #1a3a2a;
+ }
+ .rutina-perfiles__titulo{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #c5a880;
+    text-align: center;
+    padding: 30px 0 30px;
+    
+  }
+.rutina-perfiles__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+/* Reutilización DRY: Una sola clase controla todas las tarjetas */
+.tarjeta-perfiles {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  
+}
+
+.tarjeta-perfil__imagen {
+  width: 130px;
+  height: 110px;
+  flex-shrink: 0; /* Evita que la imagen se aplaste */
+}
+
+.tarjeta-perfil__titulo {
+  font-family: 'Serif', serif;
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.tarjeta-perfil__descripcion {
+  font-size: 25px;
+  color: #555555;
+  line-height: 1.4;
+}
+/*===========================================================================================================================================================================================
 ==================================================================== Bloque Nosotros ========================================================================================================
 ==============================================================================================================================================================================*/
 .intro-nosotros {

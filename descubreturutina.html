@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="styles.css"/>
     </head>
     <main>
-    <body class="descubre-tu-rutina">
+    <body class="descubre-tu-rutina__body">
          <header class="main-header"><!-- esto es el header de la pagina es la barra superior, el contenedor del logo y los enlaces de navegación -->
             <a href="index.html" class="logo-link"><!-- esto es un enlace que contiene el logo, al hacer click en el logo te lleva a la pagina de inicio -->
                 <img src="imagenes/emda logo letras.png" width="150" height="60" alt="EmDa logo" id="logo">
@@ -25,41 +25,62 @@
         </div>
         </header>
 
-        <section class="descubre-tu-rutina">
-        <h2>Descubre tu rutina ideal.</h2>
+        <section class="rutina-perfiles">
+            <h2 class="rutina-perfiles__titulo">Encuentra tu estilo.</h2>
+
         
-            <article class="tarjetas-rutina">
-                <img src="hombre-urbano.png" alt="Hombre urbano">
+            <div class="rutina-perfiles__grid">
+            <article class="tarjeta-perfiles">
+                <img src="imagenes/hombre-urbano.png" alt="Hombre urbano" class="tarjeta-perfil__imagen">
                 <div class="tarjeta-perfil">
-                    <h3>Hombre Urbano</h3>
-                    <p>Para el hombre que busca un estilo moderno y sofisticado, con productos que se adapten a su ritmo de vida en la ciudad.
+                    <h3 class="tarjeta-perfil__titulo">Hombre Urbano</h3>
+                    <p class="tarjeta-perfil__descripcion">Para el hombre que busca un estilo moderno y sofisticado, con productos que se adapten a su ritmo de vida en la ciudad.
                     </p>
                 </div>
             </article>
-            <article class="tarjeta-rutina">
-                <img src="hombre-clasico.png" alt="Hombre clásico">
+            <article class="tarjeta-perfiles">
+                <img src="imagenes/hombre-clasico.png" alt="Hombre clásico"  class="tarjeta-perfil__imagen">
                 <div class="tarjeta-perfil">
-                    <h3>Hombre Clásico</h3>
-                    <p>Para el hombre que prefiere un estilo atemporal y elegante, con productos que resalten su personalidad y cuidado personal.
+                    <h3 class="tarjeta-perfil__titulo">Hombre Clásico</h3>
+                    <p class="tarjeta-perfil__descripcion">Para el hombre que prefiere un estilo atemporal y elegante, con productos que resalten su personalidad y cuidado personal.
                     </p>
             </article>
-            <article class="tarejeta-rutina">
-                <img src="hombre-aventurero.png" alt="Hombre aventurero">
+            <article class="tarjeta-perfiles">
+                <img src="imagenes/hombre-aventurero.png" alt="Hombre aventurero" class="tarjeta-perfil__imagen">
                 <div class="tarjeta-perfil">
-                    <h3>Hombre Aventurero</h3>
-                    <p>Para el hombre que disfruta de la naturaleza y la aventura, con productos resistentes y versátiles que se adapten a su estilo de vida activo.
+                    <h3 class="tarjeta-perfil__titulo">Hombre Aventurero</h3>
+                    <p class="tarjeta-perfil__descripcion">Para el hombre que disfruta de la naturaleza y la aventura, con productos resistentes y versátiles que se adapten a su estilo de vida activo.
+                    </p>
+                </div>
+
+            </article>
+            <article class="tarjeta-perfiles">
+                <img src="imagenes/hombre-rebelde.png" alt="Hombre rebelde" class="tarjeta-perfil__imagen">
+                <div class="tarjeta-perfil">
+                    <h3 class="tarjeta-perfil__titulo">Hombre Rebelde</h3>
+                    <p class="tarjeta-perfil__descripcion">Para el hombre que busca romper con lo convencional y expresar su individualidad, con productos que reflejen su personalidad única y audaz.
                     </p>
                 </div>
             </article>
-            <article class="tarjeta-rutina">
-                <img src="hombre-rebelde.png" alt="Hombre rebelde">
-                <div class="tarjeta-perfil">
-                    <h3>Hombre Rebelde</h3>
-                    <p>Para el hombre que busca romper con lo convencional y expresar su individualidad, con productos que reflejen su personalidad única y audaz.
-                    </p>
-                </div>
-            </article>
+            </div>
         </section>
+        <section class="cuestionario-rutina">
+            <h2 class="cuestionario-rutina__titulo">Descubre tu rutina ideal.</h2>
+            <p class="cuestionario-rutina__texto">Responde unas preguntas rapidas y descubre la rutina perfecta para tu barba, cabello y rostro</p>
+            <article class="cuestionario-rutina__tarjeta">
+                <p id="cuestionario-rutina__indicador-paso" class="cuestionario-rutina__subtexto">PASO 1/5</p>
+                <h3 id="cuestionario-rutina__texto-pregunta" class="cuestionario-rutina__subtitulo">¿Que aspecto buscas en tu peinado?</h3>
+                <div class="cuestionario-rutina__opciones">
+                <button type="button" class="cuestionario-rutina__botones">FIJACION MEDIA</button>
+                <button type="button" class="cuestionario-rutina__botones">FIJACION FIRME</button>
+                <button type="button" class="cuestionario-rutina__botones">ACABADO NATURAL</button>
+                <button type="button" class="cuestionario-rutina__botones">VOLUMEN Y TEXTURA</button>
+                <button type="button" class="cuestionario-rutina__botones">ASPECTO HUMEDO</button>
+                <button type="button" class="cuestionario-rutina__botones">RIZOS DEFINIDOS</button>
+                </div>
+                <button id="cuestionario-rutina__btn-siguiente" type="button" class="cuestionario-rutina__boton-principal">SIGUIENTE PREGUNTA</button>
+            </article>
+            </section>
     </body>
     </main>
 </html>
