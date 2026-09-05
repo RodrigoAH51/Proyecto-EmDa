@@ -1097,6 +1097,7 @@ text-align: center;
 text-transform: uppercase;
 padding-bottom: 15px;
 letter-spacing: 10px;
+color: #ffffff;
 }
 .subcontenedor-nosotros h2{
   font-style: italic;
@@ -1119,10 +1120,9 @@ letter-spacing: 10px;
   text-align:center;
   line-height: 1.6;
   padding-bottom: 20px;
-}
-.subcontenedor-nosotros h1,p{
   color: #ffffff;
 }
+
 .contenedor-tarjetas-nosotros{
   display: flex;
   flex-direction: row;
