@@ -1,86 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Descubre tu rutina - EmDa</title>
-        <link rel="stylesheet" href="styles.css"/>
-    </head>
-    <main>
+
+<head>
+    <title>Descubre tu rutina - EmDa</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<main>
+
     <body class="descubre-tu-rutina__body">
-         <header class="main-header"><!-- esto es el header de la pagina es la barra superior, el contenedor del logo y los enlaces de navegación -->
-            <a href="index.html" class="logo-link"><!-- esto es un enlace que contiene el logo, al hacer click en el logo te lleva a la pagina de inicio -->
-                <img src="imagenes/emda logo letras.png" width="150" height="60" alt="EmDa logo" id="logo">
+        <header class="main-header">
+            <!-- esto es el header de la pagina es la barra superior, el contenedor del logo y los enlaces de navegación -->
+            <a href="index.html"
+                class="logo-link"><!-- esto es un enlace que contiene el logo, al hacer click en el logo te lleva a la pagina de inicio -->
+                <img src="imagenes/emda logo letras.png" width="150" height="60" alt="EmDa logo" id="logo" />
             </a>
 
-            <nav class="nav-links"> <!-- esto es el contenedor de los enlaces de navegación, el menu de la barra superior -->
+            <nav class="nav-links">
+                <!-- esto es el contenedor de los enlaces de navegación, el menu de la barra superior -->
                 <a href="index.html">Inicio</a>
-            <a href="productos.html">Productos</a>
-            <a href="kits.html">Kits</a>
-            <a href="descubreturutina.html" class="active">Descubre tu rutina</a>
-            <a href="nosotros.html">Nosotros</a>
-        </nav>
+                <a href="productos.html">Productos</a>
+                <a href="kits.html">Kits</a>
+                <a href="descubreturutina.html" class="active">Descubre tu rutina</a>
+                <a href="nosotros.html">Nosotros</a>
+            </nav>
 
-        <div class="search-box"><!-- esto es el contenedor del cuadro de busqueda y el boton de busqueda -->
-            <input type="text" placeholder="Busca aquí">
-            <button>🔍</button>
-        </div>
+            <div class="search-box">
+                <!-- esto es el contenedor del cuadro de busqueda y el boton de busqueda -->
+                <input type="text" placeholder="Busca aquí" />
+                <button>🔍</button>
+            </div>
         </header>
 
         <section class="rutina-perfiles">
             <h2 class="rutina-perfiles__titulo">Encuentra tu estilo.</h2>
 
-        
             <div class="rutina-perfiles__grid">
-            <article class="tarjeta-perfiles">
-                <img src="imagenes/hombre-urbano.png" alt="Hombre urbano" class="tarjeta-perfil__imagen">
-                <div class="tarjeta-perfil">
-                    <h3 class="tarjeta-perfil__titulo">Hombre Urbano</h3>
-                    <p class="tarjeta-perfil__descripcion">Para el hombre que busca un estilo moderno y sofisticado, con productos que se adapten a su ritmo de vida en la ciudad.
-                    </p>
-                </div>
-            </article>
-            <article class="tarjeta-perfiles">
-                <img src="imagenes/hombre-clasico.png" alt="Hombre clásico"  class="tarjeta-perfil__imagen">
-                <div class="tarjeta-perfil">
-                    <h3 class="tarjeta-perfil__titulo">Hombre Clásico</h3>
-                    <p class="tarjeta-perfil__descripcion">Para el hombre que prefiere un estilo atemporal y elegante, con productos que resalten su personalidad y cuidado personal.
-                    </p>
-            </article>
-            <article class="tarjeta-perfiles">
-                <img src="imagenes/hombre-aventurero.png" alt="Hombre aventurero" class="tarjeta-perfil__imagen">
-                <div class="tarjeta-perfil">
-                    <h3 class="tarjeta-perfil__titulo">Hombre Aventurero</h3>
-                    <p class="tarjeta-perfil__descripcion">Para el hombre que disfruta de la naturaleza y la aventura, con productos resistentes y versátiles que se adapten a su estilo de vida activo.
-                    </p>
-                </div>
-
-            </article>
-            <article class="tarjeta-perfiles">
-                <img src="imagenes/hombre-rebelde.png" alt="Hombre rebelde" class="tarjeta-perfil__imagen">
-                <div class="tarjeta-perfil">
-                    <h3 class="tarjeta-perfil__titulo">Hombre Rebelde</h3>
-                    <p class="tarjeta-perfil__descripcion">Para el hombre que busca romper con lo convencional y expresar su individualidad, con productos que reflejen su personalidad única y audaz.
-                    </p>
-                </div>
-            </article>
+                <article class="tarjeta-perfiles">
+                    <img src="imagenes/hombre-urbano.png" alt="Hombre urbano" class="tarjeta-perfil__imagen" />
+                    <div class="tarjeta-perfil">
+                        <h3 class="tarjeta-perfil__titulo">Hombre Urbano</h3>
+                        <p class="tarjeta-perfil__descripcion">
+                            Para el hombre que busca un estilo moderno y sofisticado, con
+                            productos que se adapten a su ritmo de vida en la ciudad.
+                        </p>
+                    </div>
+                </article>
+                <article class="tarjeta-perfiles">
+                    <img src="imagenes/hombre-clasico.png" alt="Hombre clásico" class="tarjeta-perfil__imagen" />
+                    <div class="tarjeta-perfil">
+                        <h3 class="tarjeta-perfil__titulo">Hombre Clásico</h3>
+                        <p class="tarjeta-perfil__descripcion">
+                            Para el hombre que prefiere un estilo atemporal y elegante, con
+                            productos que resalten su personalidad y cuidado personal.
+                        </p>
+                    </div>
+                </article>
+                <article class="tarjeta-perfiles">
+                    <img src="imagenes/hombre-aventurero.png" alt="Hombre aventurero" class="tarjeta-perfil__imagen" />
+                    <div class="tarjeta-perfil">
+                        <h3 class="tarjeta-perfil__titulo">Hombre Aventurero</h3>
+                        <p class="tarjeta-perfil__descripcion">
+                            Para el hombre que disfruta de la naturaleza y la aventura, con
+                            productos resistentes y versátiles que se adapten a su estilo de
+                            vida activo.
+                        </p>
+                    </div>
+                </article>
+                <article class="tarjeta-perfiles">
+                    <img src="imagenes/hombre-rebelde.png" alt="Hombre rebelde" class="tarjeta-perfil__imagen" />
+                    <div class="tarjeta-perfil">
+                        <h3 class="tarjeta-perfil__titulo">Hombre Rebelde</h3>
+                        <p class="tarjeta-perfil__descripcion">
+                            Para el hombre que busca romper con lo convencional y expresar
+                            su individualidad, con productos que reflejen su personalidad
+                            única y audaz.
+                        </p>
+                    </div>
+                </article>
             </div>
         </section>
         <section class="cuestionario-rutina">
             <h2 class="cuestionario-rutina__titulo">Descubre tu rutina ideal.</h2>
-            <p class="cuestionario-rutina__texto">Responde unas preguntas rápidas y descubre la rutina perfecta para tu barba, cabello y rostro</p>
-            <article class="cuestionario-rutina__tarjeta">
-                <p id="cuestionario-rutina__indicador-paso" class="cuestionario-rutina__subtexto">PASO 1/5</p>
-                <h3 id="cuestionario-rutina__texto-pregunta" class="cuestionario-rutina__subtitulo">¿Que aspecto buscas en tu peinado?</h3>
+            <p class="cuestionario-rutina__texto">
+                Responde unas preguntas rápidas y descubre la rutina perfecta para tu
+                barba, cabello y rostro.
+            </p>
+            <article class="cuestionario-rutina__tarjetas">
+                <p id="cuestionario-rutina__indicador-paso" class="cuestionario-rutina__subtexto">
+                    PASO 1/5
+                </p>
+                <h3 id="cuestionario-rutina__texto-pregunta" class="cuestionario-rutina__subtitulo">
+                    ¿Que aspecto buscas en tu peinado?
+                </h3>
                 <div class="cuestionario-rutina__opciones">
-                <button type="button" class="cuestionario-rutina__botones">FIJACIÓN MEDIA</button>
-                <button type="button" class="cuestionario-rutina__botones">FIJACIÓN FIRME</button>
-                <button type="button" class="cuestionario-rutina__botones">ACABADO NATURAL</button>
-                <button type="button" class="cuestionario-rutina__botones">VOLUMEN Y TEXTURA</button>
-                <button type="button" class="cuestionario-rutina__botones">ASPECTO HÚMEDO</button>
-                <button type="button" class="cuestionario-rutina__botones">RIZOS DEFINIDOS</button>
+                    <button type="button" class="cuestionario-rutina__botones">
+                        FIJACIÓN MEDIA
+                    </button>
+                    <button type="button" class="cuestionario-rutina__botones">
+                        FIJACIÓN FIRME
+                    </button>
+                    <button type="button" class="cuestionario-rutina__botones">
+                        ACABADO NATURAL
+                    </button>
+                    <button type="button" class="cuestionario-rutina__botones">
+                        VOLUMEN Y TEXTURA
+                    </button>
+                    <button type="button" class="cuestionario-rutina__botones">
+                        ASPECTO HÚMEDO
+                    </button>
+                    <button type="button" class="cuestionario-rutina__botones">
+                        RIZOS DEFINIDOS
+                    </button>
                 </div>
-                <button id="cuestionario-rutina__btn-siguiente" type="button" class="cuestionario-rutina__boton-principal">SIGUIENTE PREGUNTA</button>
+                <button id="cuestionario-rutina__btn-siguiente" type="button" class="cuestionario-rutina__botones">
+                    SIGUIENTE PREGUNTA
+                </button>
             </article>
-            </section>
+        </section>
+
+        <section class="cuestionario-resultado__resultado">
+            <article class="cuestionario-resultado__resultado-tarjeta">
+                <h2 class="cuestionario-resultado__titulo">Tu rutina ideal es:</h2>
+                <p class="cuestionario-resultado__texto">
+                    Basado en tu perfil, hemos seleccionado los productos que mejor se
+                    adaptan a tu estilo y necesidades.
+                </p>
+                <div class="cuestionario-resultado__contenedor-tarjetas">
+
+                <div class="cuestionario-resultado__tarjetas-productos--principal">
+                    <h3 class="cuestionario-resultado__nombre-kit">
+                        Diagnóstico: kit "hombre urbano"
+                    </h3>
+                    <p class="cuestionario-resultado__descripcion-rutina">
+                        Rutina completa de 3 pasos
+                    </p>
+                    <img src="imagenes/cuestionario-resultado__kit-hombre-urbano.png" alt="Kit 'hombre urbano'"
+                        class="cuestionario-resultado__imagen-producto--principal" />
+                    <p class="cuestionario-resultado__kit-completo">
+                        Kit "hombre urbano" completo
+                    </p>
+                    <div class="cuestionario-resultado__contenedor-costos">
+                        <p class="cuestionario-resultado__costo-normal">$1,300.</p>
+                        <p class="cuestionario-resultado__costo-descuento">$1,000.</p>
+                    </div>
+                    <button type="button" class="cuestionario-resultado__boton-anadir-carrito--principal">
+                        Añadir al carrito
+                    </button>
+                </div>
+                <div class="cuestionario-resultado__tarjetas-productos">
+                    <img src="imagenes/cuestionario-resultado__pomada-citricos.png" alt="Pomada original Cítricos"
+                        class="cuestionario-resultado__imagen-producto" />
+                        <div class="cuestionario-resultado__contenido-tarjeta">
+                    <h3 class="cuestionario-resultado__pasos">
+                        Paso 1 | Peinado versátil
+                    </h3>
+                    <p class="cuestionario-resultado__producto-unitario">
+                        Pomada original Cítricos 150ml
+                    </p>
+                    <p class="cuestionario-resultado__descripcion-producto">
+                        Define y estiliza tu cabello con fijación media y brillo natural.
+                        Perfecto para el día a día.
+                    </p>
+                    <button type="button" class="cuestionario-resultado__boton-anadir-carrito">
+                        Añadir solo esto
+                    </button>
+                    </div>
+                </div>
+                <div class="cuestionario-resultado__tarjetas-productos">
+                    <img src="imagenes/cuestionario-resultado__exfoliante-serum.jpg" alt="Exfoliante facial cítricos y Serum facial hidratante"
+                        class="cuestionario-resultado__imagen-producto" />
+                        <div class="cuestionario-resultado__contenido-tarjeta">
+                    <h3 class="cuestionario-resultado__pasos">
+                        Paso 2 | Cuidado facial
+                    </h3>
+                    <p class="cuestionario-resultado__producto-unitario">
+                        Exfoliante facial cítricos 500ml y Serum facial hidratante 50ml
+                    </p>
+                    <p class="cuestionario-resultado__descripcion-producto">
+                        Exfolia suavemente la piel e hidrata profundamente para un aspecto
+                        más joven y radiante.
+                    </p>
+                    <button type="button" class="cuestionario-resultado__boton-anadir-carrito">
+                        Añadir solo esto
+                    </button>
+                        </div>
+                </div>
+                <div class="cuestionario-resultado__tarjetas-productos">
+                    <img src="imagenes/cuestionario-resultado__after-aceite.png" alt="Aceite para barba cítricos y After shave cítricos"
+                        class="cuestionario-resultado__imagen-producto" />
+                        <div class="cuestionario-resultado__contenido-tarjeta">
+                    <h3 class="cuestionario-resultado__pasos">
+                        Paso 3 | Cuidado integral
+                    </h3>
+                    <p class="cuestionario-resultado__producto-unitario">
+                        Aceite para barba cítricos 30ml y after shave cítricos 250ml
+                    </p>
+                    <p class="cuestionario-resultado__descripcion-producto">
+                        Hidrata y protege la barba después del afeitado, reduciendo la
+                        irritación y proporcionando un acabado fresco.
+                    </p>
+                    <button type="button" class="cuestionario-resultado__boton-anadir-carrito">
+                        Añadir solo esto
+                    </button>
+                    </div>
+                </div>
+                </div>
+            </article>
+        </section>
     </body>
-    </main>
+</main>
+
 </html>
