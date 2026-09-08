@@ -102,9 +102,11 @@ body {
 /* Centra el título principal */
 .productos-destacados h1 {
   text-align: center;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 25px;
+  font-size: 40px; 
   text-transform: uppercase;
+  padding-top: 30px;
 }
 
 /* El contenedor que alinea las 4 tarjetas en una sola fila */
@@ -689,7 +691,7 @@ details[open] .respuesta-blanca {
   }
 }
 /*===========================================================================================================================================================================================
-============================================================= Bloque Promos =====================================================================================================================================================================================
+============================================================= Bloque catalogo productos =====================================================================================================================================================================================
 ==============================================================================================================================================================================*/
 
 .emda-promo-paquetes {
@@ -706,11 +708,16 @@ details[open] .respuesta-blanca {
   align-items: center;
   text-align: center;
   font-size: 40px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 10px;
   margin-bottom: 15px;
-  color: #000  !important;
+  color: #000;
+  border-top: 5px solid #c5a880; 
+  border-bottom: 5px solid #c5a880; 
+  border-radius: 4px;
+  padding: 10px 20px;
   
 }
 /* Distribución en dos columnas principales mediante Grid */
@@ -990,6 +997,131 @@ details[open] .respuesta-blanca {
   font-weight: bold;
   cursor: not-allowed;
 }
+/*===========================================================================================================================================================================================
+================================================================= Bloque Kits ==================================================================================================================================================================================
+==============================================================================================================================================================================*/
+.seccion-kits__contenedor-general{
+
+}
+.seccion-kits__titulo{
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #1a3a2a;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.seccion-kits__titulos-textos--subtitulo{
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.seccion-kits__titulos-textos--subtxt{
+ background-color: #1a3a2a;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0 20px;
+  color: #ffffff;
+  border-top: solid 3px #c5a880;
+  border-bottom: solid 3px #c5a880;
+} 
+.seccion-kits__contenedor-tarjetas{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+max-width: 1200px;
+margin: 0 auto;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+.seccion-kits__tarjetas-kits{
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  border: none;
+ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+ padding: 20px;
+ background-color: #f7f6f0;
+}
+.seccion-kits__tarjetas-kits:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.85);
+}
+.seccion-kits__imagenes-tarjetas{
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  object-position: center; 
+  max-width: 100%; 
+}
+.seccion-kits__subtitulos-tarjetas{
+font-size: 22px;
+padding-bottom: 10px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.seccion-kits__subtexto-tarjetas{
+font-size: 18px;
+font-weight: bold;
+font-family: sans-serif;
+padding-left: 5px;
+}
+.seccion-kits__contenido-tarjetas{
+font-size: 18px;
+font-family:Arial, Helvetica, sans-serif;
+padding-bottom:15px;
+}
+.seccion-kits__descripcion-tarjetas{
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 15px;
+font-weight: bold;
+padding-bottom:15px;
+}
+.seccion-kits__costos-boton{
+  display:flex;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.seccion-kits__costos-real-tarjetas{
+font-size: 18px;
+text-decoration: line-through;
+font-family: Arial, Helvetica, sans-serif;
+color: #5f5c5c;
+padding-left: 10px;
+
+}
+.seccion-kits__costo-descuento-tarjetas{
+font-size: 20px;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+border-left: solid 1px;
+padding-left: 15px;
+}
+.seccion-kits__boton-tarjetas{
+  font-size: 18px;
+  padding: 1px;
+  background-color: #1a3a2a;
+  color: #fff;
+  border: solid 2px #c5a880;
+  border-radius: 5px;
+  width: 50%;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.seccion-kits__boton-tarjetas:hover{
+background-color: #c5a880;
+color: #1a3a2a;
+border: solid 2px #1a3a2a;
+}
+.seccion-kits__boton-tarjetas:active{
+ transform:  scale(.95);
+
+}
+
+
+
 /*===========================================================================================================================================================================================
 ================================================================= Bloque Proveedores ==================================================================================================================================================================================
 ==============================================================================================================================================================================*/
@@ -1885,10 +2017,10 @@ article.terminos-servicio p {
 ==============================================================================================================================================================================*/
 
 
-body.politica-rembolso {
+body.politica-envio {
   background-color: #f4f6f9;
 }
-section.contenedor-politica-rembolso {
+section.contenedor-politica-envio {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
@@ -1897,17 +2029,17 @@ section.contenedor-politica-rembolso {
   width: 85%;
   margin: 40px auto;
 }
-article.politica-rembolso h1 {
+article.politica-envio h1 {
   font-size: 32px;
   margin-bottom: 10px;
   text-align: center;
 }
-article.politica-rembolso h2 {
+article.politica-envio h2 {
   margin-top: 28px;
   margin-bottom: 12px;
   font-size: 28px;
 }
-article.politica-rembolso p {
+article.politica-envio p {
   font-size: 18px;
   margin-top: 20px;
   margin-bottom: 18px;
