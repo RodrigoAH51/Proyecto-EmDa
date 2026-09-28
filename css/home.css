@@ -1,0 +1,578 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*===============================================================================================================================================
+=============================================== Bloque Portada Hero =============================================================================
+=================================================================================================================================================*/
+.portada-hero {
+  margin-top: 70px;
+  width: 100%;
+  height: 600px;
+  background-image: url("../imagenes/banners/portada.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: 141414;
+  display: block;
+}
+/*===============================================================================================================================================
+=============================================== Bloque productos destacados ======================================================================
+=================================================================================================================================================*/
+.productos-destacados__titulo {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 25px;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+.productos-destacados__contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.productos-destacados__tarjeta {
+  flex: 1;
+  max-width: 450px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  transform: 0.3s;
+  box-shadow: 0.3s;
+}
+.productos-destacados__tarjeta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+.productos-destacados__imagen-tarjeta {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto 15px auto;
+  display: block;
+}
+.productos-destacados__subtitulo {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #222;
+  margin: 10px 0 5px 0;
+  font-family: sans-serif;
+}
+.productos-destacados__texto {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 15px;
+  height: 36px;
+  overflow: hidden;
+}
+.productos-destacados__enlace-tarjeta {
+  display: inline-block;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+  font-weight: bold;
+}
+.productos-destacados__enlace-tarjeta:hover {
+  color: #555;
+  border-color: #555;
+}
+/*===============================================================================================================================================
+=============================================== Bloque propuesta de valor ======================================================================
+=================================================================================================================================================*/
+.propuesta-valor {
+  background-color: #fcfcfc;
+  padding: 60px 20px;
+  border-top: 1px solid #eee;
+}
+.propuesta-valor__contenedor-contenido {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.propuesta-valor__tarjeta {
+  flex: 1;
+  text-align: center;
+  max-width: 300px;
+}
+.propuesta-valor__subtitulo {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.propuesta-valor__texto {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+/*===============================================================================================================================================
+=============================================== Bloque historia EmDa ======================================================================
+=================================================================================================================================================*/
+.historia-emda {
+  position: relative;
+  padding: 120px 20px;
+  color: #ffffff;
+  background-image: url("../imagenes/banners/fondo1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.historia-emda::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.historia-emda__contenedor {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
+}
+.historia-emda__columna-izquierda {
+  flex: 1;
+  max-width: 540px;
+  background-color: rgba(11, 21, 17, 0.85);
+  padding: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+.historia-emda__texto-mini {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #a4beac;
+  display: block;
+  margin-bottom: 12px;
+}
+.historia-emda__subtitulo {
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 15px 0;
+}
+.historia-emda__separador-dorado {
+  width: 50px;
+  height: 2px;
+  background-color: #c5a880;
+  margin-bottom: 25px;
+}
+.historia-emda__texto {
+  font-size: 20px;
+  color: #e0e0e0;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.historia-emda__texto-destacado {
+  font-style: italic;
+  font-size: 20px;
+  color: #ffffff;
+  border-left: 2px solid #c5a880;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+.historia-emda__columna-derecha {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.historia-emda__logo-firma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  width: 100%;
+  max-width: 400px;
+  animation: flotarSuave 4s ease-in-out infinite;
+}
+.historia-emda__logo {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.6));
+  margin-top: -50px;
+}
+.historia-emda__firma {
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.9;
+  margin-top: -70px;
+}
+@keyframes flotarSuave {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/*===============================================================================================================================================
+=============================================== Bloque ediciones especiales ======================================================================
+=================================================================================================================================================*/
+.ediciones-especiales {
+  background-color: #141a18;
+  padding: 100px 20px;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.ediciones-especiales__columna-izquierda {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.ediciones-especiales__imagen {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.ediciones-especiales__columna-derecha {
+  flex: 1;
+  max-width: 500px;
+}
+.ediciones-especiales__texto-mini {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #c5a880; /* Dorado elegante de EmDa */
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+.ediciones-especiales__subtitulo {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 15px 0;
+  line-height: 1.3;
+}
+.ediciones-especiales__linea-decorativa {
+  width: 50px;
+  height: 2px;
+  background-color: #c5a880;
+  margin-bottom: 25px;
+}
+.ediciones-especiales__texto {
+  font-size: 20px;
+  color: #cccccc;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+.ediciones-especiales__texto-destacado {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+.ediciones-especiales__boton {
+  display: inline-block;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 15px 35px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.ediciones-especiales__boton:hover {
+  background-color: #ffffff;
+  color: #141a18;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/*===============================================================================================================================================
+=============================================== Bloque compras seleccionadas ======================================================================
+=================================================================================================================================================*/
+.compras-seleccionadas {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  color: #333333;
+  font-family: sans-serif;
+}
+.compras-seleccionadas__contenedor {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 992px) {
+  .compras-seleccionadas__contenedor {
+    grid-template-columns: 3fr 1fr; 
+  }
+}
+.compras-seleccionadas__cuadricula {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+.compras-seleccionadas__tarjeta--destacada .compras-seleccionadas__promo{
+  position: relative;
+  background: #000000;
+  min-height: 250px;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+}
+.compras-seleccionadas__imagen--destacada {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  
+}
+.compras-seleccionadas__subtitulo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #ffffff;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+}
+.compras-seleccionadas__tarjeta {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #eaeaea;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+.compras-seleccionadas__tarjeta:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 1);
+  border-color: #dcdcdc;
+}
+.compras-seleccionadas__imagen {
+  padding: 30px 20px 10px 20px;
+  text-align: center;
+  background: #fafafa;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 200px;
+  width: auto;
+  object-fit: contain;
+}
+.compras-seleccionadas__contenido-tarjeta {
+  padding: 20px;
+  text-align: left;
+}
+.compras-seleccionadas__subtexto {
+  font-size: 11px;
+  color: #999999;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 5px;
+}
+.compras-seleccionadas__nombre-producto {
+  font-size: 15px;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #222222;
+}
+.compras-seleccionadas__precio {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #111111;
+}
+.compras-seleccionadas__precio-descuento {
+  color: #d9534f;
+  margin-right: 8px;
+}
+.compras-seleccionadas__precio-original {
+  text-decoration: line-through;
+  color: #aaaaaa;
+  font-size: 18px;
+}
+.compras-seleccionadas__boton {
+  width: 100%;
+  background-color: #384252; 
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  border-radius: 25px; 
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.compras-seleccionadas__boton:hover {
+  background-color: #1f2733;
+}
+.compras-seleccionadas__barra-lateral {
+  width: 100%;
+}
+.compras-seleccionadas__carrito-compras {
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 20px;
+  padding: 30px 24px;
+  position: static;
+}
+@media (min-width: 992px) {
+  .compras-seleccionadas__carrito-compras {
+    position: sticky;
+    top: 40px; /* Se queda fijo al hacer scroll hacia abajo */
+  }
+}
+.compras-seleccionadas__ordena-ahora {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  letter-spacing: -0.5px;
+  color: #222222;
+}
+.compras-seleccionadas__texto-instrucciones {
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.compras-seleccionadas__division-barra {
+  height: 1px;
+  background-color: #eaeaea;
+  margin-bottom: 20px;
+}
+.compras-seleccionadas__barra-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.compras-seleccionadas__valor-total {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+}
+.compras-seleccionadas__valor-costo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #111111;
+}
+.compras-seleccionadas__boton-carrito {
+  width: 100%;
+  background-color: #cbd5e1; /* Gris claro desactivado por defecto */
+  color: #ffffff;
+  border: none;
+  padding: 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: not-allowed;
+}
+/*===============================================================================================================================================
+=============================================== Bloque distribuidor oficial ======================================================================
+=================================================================================================================================================*/
+.distribuidor-oficial{
+background-color: #f9f9f9; 
+  padding: 80px 20px;
+  color: #111111;
+  text-align: center;
+}
+.distribuidor-oficial__contenedor{
+max-width: 700px;
+  margin: 0 auto;
+}
+.distribuidor-oficial__subtitulo{
+font-size: 38px;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+  letter-spacing: 1px;
+}
+.distribuidor-oficial__texto{
+font-size: 18px;
+  color: #555555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+.distribuidor-oficial__texto-resaltado{
+color: #c5a880;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: bold;
+}
+.distribuidor-oficial__input{
+    margin-bottom: 20px;
+}
+.distribuidor-oficial__formulario-registro input{
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 8px; 
+  font-size: 15px;
+  background-color: #ffffff;
+  box-sizing: border-box; 
+  transition: 0.3s ease;
+}
+.distribuidor-oficial__input input:focus{
+    border-color: #c5a880; 
+  outline: none;
+}
+.distribuidor-oficial__boton{
+width: 100%;
+  background-color: #111111; 
+  color: #ffffff;
+  border: none;
+  padding: 16px;
+  border-radius: 25px; 
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.distribuidor-oficial__boton:hover{
+background-color: #1a3a2a;
+}
