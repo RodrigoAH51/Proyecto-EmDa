@@ -1,0 +1,178 @@
+/*===============================================================================================================================================
+=============================================== FAQ ======================================================================
+=================================================================================================================================================*/
+.faq{
+    background: #1a3a2a;
+}
+.faq__contenedor{
+    background: #fff;
+    padding-left: 15px;
+}
+.faq__titulo{
+      font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  padding: 80px 0 10px 15px;
+}
+.faq__texto{
+      color: #c5a880;
+  margin-bottom: 50px;
+  font-style: italic;
+  font-size: 30px;
+  padding-left: 15px;
+}
+.faq__item{
+      border-bottom: 1px solid #eeeeee;
+}
+.faq__summary{
+     list-style: none; 
+  padding: 25px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  font-weight: 600;
+  font-size: 22px;
+}
+.faq__summary:hover{
+      color: #555;
+  text-decoration: underline;
+}
+
+.faq__flecha{
+  transition: transform 0.3s ease;
+  display: inline-block;
+  font-weight: bold;
+}
+.faq__respuesta{
+ padding-bottom: 20px;
+  color: #444;
+  line-height: 1.7;
+  font-size: 18px;
+}
+summary {
+  list-style: none; 
+}
+summary::-webkit-details-marker {
+  display: none; 
+}
+details[open] .faq__flecha {
+  transform: rotate(90deg);
+}
+
+details[open] .faq__respuesta {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*===============================================================================================================================================
+=============================================== POLÍTICA DE PRIVACIDAD ======================================================================
+=================================================================================================================================================*/
+.politica-privacidad{
+    background: #f4f6f9;
+    padding-top: 60px;
+}
+.politica-privacidad__contenedor{
+      background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 08);
+  border: 1px solid #e0e0e0;
+  width: 85%;
+  margin: 40px auto;
+}
+.politica-privacidad__titulo{
+      font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 20px;
+}
+.politica-privacidad__ultima-actualizacion{
+    font-size: 26;
+  color: #555454;
+  font-style: italic;
+}
+.politica-privacidad__subtitulo{
+margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+.politica-privacidad__texto{
+      font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.politica-privacidad__lista{
+    margin-bottom: 30px;
+  margin-top: 20px;
+  padding-left: 25px;
+}
+.politica-privacidad__correo a:hover{
+     text-decoration: underline;
+     color: #1a3a2a;
+}
+/*===============================================================================================================================================
+=============================================== POLÍTICA DE REMBOLSO ======================================================================
+=================================================================================================================================================*/
+.politica-rembolso{
+      background-color: #f4f6f9;
+      padding-top: 60px;
+}
+.politica-rembolso__contenedor{
+         background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 08);
+  border: 1px solid #e0e0e0;
+  width: 85%;
+  margin: 40px auto;
+}
+.politica-rembolso__titulo{
+          font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 20px;
+}
+.politica-rembolso__subtitulo{
+    margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+.politica-rembolso__texto{
+        font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.politica-rembolso__texto-resaltado{
+    font-weight: 700;
+    font-size: 22px;
+}
+.politica-rembolso__lista{
+      margin-bottom: 30px;
+  margin-top: 20px;
+  padding-left: 25px;
+}
+.politica-rembolso__correo a:hover{
+     text-decoration: underline;
+     color: #1a3a2a;
+}
+.politica-rembolso__
+.politica-rembolso__
+.politica-rembolso__
+.politica-rembolso__
+.politica-rembolso__
+.politica-rembolso__
+.politica-rembolso__
+.politica-rembolso__
+.politica-rembolso__

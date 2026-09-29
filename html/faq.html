@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EmDa Premium Grooming - Cuidado personal masculino de alta calidad.">
+    <title>EmDa | Preguntas frecuentes</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../imagenes/logos/favicon-512x512.png" type="image/png">
+    
+    <!-- CSS Principal / Arquitectura modular -->
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/legales.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Enlace que contiene el logo; al hacer clic te redirige a la página principal -->
+    <a href="inicio.html" class="header__logo-link">
+        <img src="../imagenes/logos/emda logo letras.png" width="150" height="60" alt="EmDa logo" class="header__logo">
+    </a>
+        <!-- Contenedor del menú de navegación superior -->
+    <nav class="header__nav">
+        <!-- Enlace activo que indica la página actual -->
+        <a href="inicio.html" class="header__link">Inicio</a>
+        <a href="productos.html" class="header__link">Productos</a>
+        <a href="kits.html" class="header__link">Kits</a>
+        <a href="descubrerutina.html" class="header__link">Descubre tu rutina</a>
+        <!-- Último enlace del menú al que le quitamos la línea divisora -->
+        <a href="nosotros.html" class="header__link">Nosotros</a>
+    </nav>
+    <!-- Contenedor del cuadro de búsqueda y su botón -->
+    <div class="header__search">
+        <input type="text" placeholder="Busca aquí" class="header__input">
+        <button class="header__button">🔍</button>
+    </div>
+</header>
+<main>
+      <!--Bloque Preguntas Frecuentes/ FAQ-->
+        <section class="faq">
+        <h2 class="faq__titulo">Preguntas Frecuentes</h2>
+        <p class="faq__texto">Todo lo que necesitas saber sobre EmDa.</p>
+        <div class="faq__contenedor">
+        <details class="faq__item" name="faq__grupo">
+            <summary class="faq__summary">
+                <span class="faq__pregunta">¿Los productos son aptos para pieles sensibles?</span>
+                <span class="faq__flecha">→</span>
+            </summary>
+            <div class="faq__respuesta">
+                <p>Sí, nuestras fórmulas están desarrolladas profesionalmente con ingredientes de alta calidad para minimizar irritaciones.</p>
+            </div>
+            </details>  
+
+        <details class="faq__item"  name="faq__grupo">
+            <summary class="faq__summary">
+                <span class="faq__pregunta">¿Sus productos contienen parabenos o ingredientes dañinos? </span>
+                <span class="faq__flecha">→</span>
+            </summary>
+            <div class="faq__respuesta">
+                <p>No, en EmDa priorizamos la salud de tu piel y cabello. <br> 
+                    nuestras formulaciones están libres de parabenos, sulfatos agresivos y químicos dañinos, utilizando solo ingredientes de grado profesional.</p>
+            </div>
+        </details>
+
+        <details class="faq__item"  name="faq__grupo">
+            <summary class="faq__summary">
+                <span class="faq__pregunta">¿Cómo puedo saber qué kit es el ideal para mí? </span>
+                <span class="faq__flecha">→</span>
+            </summary>
+            <div class="faq__respuesta">
+                <p>Si tienes dudas, puedes enviarnos un mensaje directo a nuestras redes sociales.</p>
+                <p>Estamos aquí para analizar tu tipo de piel y barba, y recomendarte exactamente lo que necesitas.</p>
+                <p>O bien en la sección de descubre tu rutina puedes encontrar un formulario que te ayuda a hacerte un auto análisis.</p>
+            </div>
+        </details>
+
+        <details class="faq__item"  name="faq__grupo">
+            <summary class="faq__summary">
+                <span>¿Donde y como puedo comprar sus productos? </span>
+                <span class="faq__flecha">→</span>
+            </summary>
+            <div class="faq__respuesta">
+                <p>Realizamos envíos a toda la república. Puedes gestionar tu pedido directamente en nuestro sitio web.</p>
+            </div>
+        </details>
+    </div>
+</section>
+</main>
+<!-- Bloque Principal Footer -->
+<footer class="footer">
+    <!-- Columna 1: Contacto -->
+    <div class="footer__columna footer__columna--contacto">
+        <h4 class="footer__titulo">Contacto</h4>
+        <p class="footer__texto"><a href="mailto:contacto@emdapremium.com" class="footer__enlace">contacto@emdapremium.com</a></p>
+        <p class="footer__texto"><a href="https://wa.me/525611558451" target="_blank" class="footer__enlace footer__enlace--whatsapp">+52 5611558451</a></p>
+    </div> 
+
+    <!-- Columna 2: Ayuda / FAQ -->
+    <div class="footer__columna footer__columna--ayuda">
+        <h4 class="footer__titulo">Ayuda</h4>
+        <p class="footer__texto"><a href="faq.html" class="footer__enlace">Preguntas Frecuentes</a></p>  
+    </div>
+
+    <!-- Columna 3: Redes Sociales -->
+    <div class="footer__columna footer__columna--redes">
+        <h4 class="footer__titulo">Redes sociales</h4>
+        <div class="footer__iconos">
+            <a href="#" target="_blank" class="footer__icono-enlace"><img src="../imagenes/iconos/fbicon.png" width="30" height="30" alt="Facebook icono"></a>
+            <a href="#" target="_blank" class="footer__icono-enlace"><img src="../imagenes/iconos/igicon.png" width="30" height="30" alt="Instagram icono"></a>
+            <a href="#" target="_blank" class="footer__icono-enlace"><img src="../imagenes/iconos/waicon.png" width="30" height="30" alt="WhatsApp icono"></a>
+            <a href="#" target="_blank" class="footer__icono-enlace"><img src="../imagenes/iconos/tiktokicon.png" width="30" height="30" alt="Tiktok icono"></a>
+        </div>
+    </div>
+</footer>
+
+<!-- Bloque Footer Bottom (Copyright y Legales) -->
+<div class="footer-bottom">
+    <p class="footer-bottom__copy">© 2026 EmDa Premium Grooming. Todos los derechos reservados.</p>
+    <nav class="footer-bottom__nav">
+        <a href="politica-privacidad.html" class="footer-bottom__enlace">Política de privacidad</a>
+        <a href="politica-rembolso.html" class="footer-bottom__enlace">Política de reembolso</a>
+        <a href="terminos-servicio.html" class="footer-bottom__enlace">Términos del servicio</a>
+        <a href="politica-envio.html" class="footer-bottom__enlace">Política de envío</a>
+    </nav>
+</div>
+</body>
+</html>
