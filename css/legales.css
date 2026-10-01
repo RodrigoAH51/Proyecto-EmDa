@@ -167,12 +167,88 @@ margin-top: 28px;
      text-decoration: underline;
      color: #1a3a2a;
 }
-.politica-rembolso__
-.politica-rembolso__
-.politica-rembolso__
-.politica-rembolso__
-.politica-rembolso__
-.politica-rembolso__
-.politica-rembolso__
-.politica-rembolso__
-.politica-rembolso__
+/*===============================================================================================================================================
+=============================================== TÉRMINOS DE SERVICIO ======================================================================
+=================================================================================================================================================*/
+.terminos-servicio{
+ background-color: #f4f6f9;
+ padding-top: 60px;
+}
+.terminos-servicio__contenedor{
+background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 08);
+  border: 1px solid #e0e0e0;
+  width: 85%;
+  margin: 40px auto;
+}
+.terminos-servicio__titulo{
+font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.terminos-servicio__subtitulo{
+ margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+.terminos-servicio__texto{
+ font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+.terminos-servicio__texto--destacado{
+ font-weight: bold;
+}
+.terminos-servicio__lista{
+ margin-bottom: 30px;
+  margin-top: 20px;
+  padding-left: 25px;
+}
+.terminos-servicio__correo:hover{
+text-decoration: underline;
+  color: #1a3a2a;
+}
+/*===============================================================================================================================================
+=============================================== POLÍTICA DE ENVIÓ ======================================================================
+=================================================================================================================================================*/
+.politica-envio{
+background-color: #f4f6f9;
+padding-top: 60px;
+}
+.politica-envio__contenedor{
+ background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 08);
+  border: 1px solid #e0e0e0;
+  width: 85%;
+  margin: 40px auto;
+}
+.politica-envio__titulo{
+ font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.politica-envio__subtitulo{
+ margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+.politica-envio__texto{
+ font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+.politica-envio__texto--resaltado{
+font-style: italic ;
+}
+.politica-envio__lista{
+ margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 25px;
+}
